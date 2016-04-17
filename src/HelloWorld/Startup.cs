@@ -7,6 +7,7 @@ using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Http;
 using Microsoft.Extensions.DependencyInjection;
 
+
 namespace HelloWorld
 {
     public class Startup
@@ -24,7 +25,7 @@ namespace HelloWorld
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await context.Response.WriteAsync("Hello World! Hello ASP.NET Core 1.0 \n");
             });
         }
 
